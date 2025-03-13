@@ -1,0 +1,40 @@
+package org;
+
+public class HdfcBank extends AxisBank {
+	//polymorphism>>> Overriding
+	
+	@Override
+	public void fixed() {
+		System.out.println("7%");
+	}
+	@Override
+	public void loan() {
+		System.out.println("5%");
+	}
+	public static void main(String[] args) {
+		
+		HdfcBank h = new HdfcBank();
+		h.fixed();
+		h.loan();
+		h.savings();
+	}
+}
+package org;
+//polymorphism>>> Overriding
+public class AxisBank {
+
+	public void fixed() {
+	System.out.println("5%");
+
+	}
+   
+	public void savings() {
+	System.out.println("6%");
+
+    }
+	public void loan() {
+	System.out.println("7%");
+	}
+
+}
+
