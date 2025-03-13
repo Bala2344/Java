@@ -1,0 +1,57 @@
+package multilevel;
+
+public class Client extends Emp {
+//Parent
+	public void cliId() {
+	System.out.println("442892");
+	}
+}
+package multilevel;
+
+import org.checkerframework.checker.units.qual.C;
+
+public class Com extends Client {
+//child
+	public void comId() {
+	System.out.println("552892");
+
+}
+	public static void main(String[] args) {
+		
+	Com c = new Com();
+	
+	c.cliId();
+	c.comId();
+	c.empId();
+	
+	
+	
+
+	}
+	
+}
+package multilevel;
+
+public class Customer extends Com{
+//lost child
+	public void customerId() {
+	System.out.println("662892");
+
+}
+	public static void main(String[] args) {
+		
+		Customer c = new Customer();
+		c.cliId();
+		c.comId();
+		c.empId();
+	}
+}
+package multilevel;
+
+public class Emp {
+//Grand parent
+	public void empId() {
+	System.out.println("332892");
+
+	}
+}
