@@ -1,0 +1,38 @@
+package encapsulation;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class ClientListForLoop {
+
+public static void main(String[] args) {
+		
+		//1st employee info;
+		CompanyPojo c = new CompanyPojo(100,"Ajith",35);
+		
+		//2nd emp info;
+		CompanyPojo c1 = new CompanyPojo();
+		c1.setId(200);
+		c1.setName("Vijay");
+		c1.setAge(45);
+		
+		//user defined list;
+		List<CompanyPojo> li = new ArrayList();
+		li.add(c);
+		li.add(c1);
+		
+		System.out.println(li);
+		
+		//for loop >use index on array;
+		for (int i = 0; i < li.size(); i++) {
+			System.out.println(li.get(i).getId());
+			System.out.println(li.get(i).getName());
+			System.out.println(li.get(i).getAge());
+		}
+		
+		
+		
+	}
+	
+}
