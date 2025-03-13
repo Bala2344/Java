@@ -1,0 +1,54 @@
+package encapsulation;
+
+//POJO Class: Plain Old Java Object
+//Private variables (e.x)id,name,age,dept
+//Pojo class to generate 4 methods to be follow:
+//1.Generate Getters and setters
+//2.Defualt constructor ctl+space
+//3.Arguments based constructor>>>> Generate constructor using fields
+//4.To string method 
+public class CompanyPojo {
+ 
+	 private int id;
+	 private String name;
+	 private int age;
+	 
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	public CompanyPojo(int id, String name, int age) {
+		this.id = id;
+		this.name = name;
+		this.age = age;
+	}
+	public CompanyPojo() {
+		// TODO Auto-generated constructor stub
+	}
+	@Override
+	public String toString() {
+		return "Company [id=" + id + ", name=" + name + ", age=" + age + "]";
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+}
