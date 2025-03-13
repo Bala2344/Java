@@ -1,0 +1,60 @@
+package org;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegEx {
+
+	public static void main(String[] args) {
+//Regular Expressions: used to search the data inside the string
+//when you search for data in a text,
+//you can use this search pattern to describe wht you are searching for.
+		
+       //Pattern p = Pattern.compile("vgvhgj"); >>>false
+	   //Pattern p = Pattern.compile("Bala"); >>>true
+		
+		String s = "Balaji";
+		
+		Pattern p = Pattern.compile("Bala");
+		
+		Matcher m = p.matcher(s);
+		
+		Boolean b = m.find();
+		
+		System.out.println(b);
+		
+	}
+	
+}
+
+package org;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class RegEx2 {
+
+
+	public static void main(String[] args) {
+		
+		String s = "javaApp345_-+)35python";
+		
+		Pattern p = Pattern.compile("[^A-Za-z0-9]"); 
+		//for (e.x)whole data fetch >>> [A-Za-z0-9]
+		                                       
+		// Only fetch special charecters >> [^A-Za-z0-9]
+		// only numbers ("[0-9]")
+		
+		Matcher m = p.matcher(s);
+		
+		//while loop with condition;
+		while (m.find()) {
+			
+			System.out.println(m.group());
+			
+		}
+		
+		
+	}
+}
+
