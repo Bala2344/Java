@@ -1,0 +1,23 @@
+package encapsulation;
+
+public class Client {
+
+	public static void main(String[] args) {
+		
+		//1st employee info;
+		CompanyPojo c = new CompanyPojo();
+		c.setId(100);
+		c.setName("Ajith");
+		c.setAge(35);
+		
+		//2nd emp info;
+		CompanyPojo c1 = new CompanyPojo();
+		c1.setId(200);
+		c1.setName("Vijay");
+		c1.setAge(45);
+		
+		System.out.println(c);
+		System.out.println(c1);
+	}
+	
+}
