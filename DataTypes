@@ -1,0 +1,53 @@
+package org;
+
+public class DataTypes {
+
+public static void main(String[] args) {
+	
+System.out.println("Cognizant technology solutions");	
+
+byte age = 30;
+System.out.println("Employee age : "+age);
+
+short yearOfJoining = 2012;
+System.out.println("Employee year of joining : "+yearOfJoining);
+
+int pincode = 600049;
+System.out.println("Employee pincode : "+pincode);
+
+long phNo = 984032708;
+System.out.println("Employee phone number : "+phNo);
+
+float sal = 987654.7856789f;
+System.out.println("Employee salary: "+sal);
+
+float x =20/3f;
+System.out.println(x);
+
+double y = 20/3d;
+System.out.println(y);
+
+char gender = 'M';
+System.out.println("Employee gender : "+gender);
+
+String email = "Blue123@gmail.com";
+System.out.println("Employee email : "+email);
+
+boolean status = false;
+System.out.println("Employee status : "+status);
+
+
+
+
+
+
+
+
+
+
+
+
+}
+	
+}
+
