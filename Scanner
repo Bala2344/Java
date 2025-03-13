@@ -1,0 +1,29 @@
+package org;
+
+import java.util.Scanner;
+
+public class TestScan {
+
+	public static void main(String[] args) {
+		 	
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter Age : ");
+		byte age = sc.nextByte();
+		System.out.println("Employee Age : " +age); 
+
+		System.out.println("Enter phone number : ");
+		long phNo = sc.nextLong();
+		System.out.println("Employee phone number : "+phNo);
+
+		System.out.println("Enter salary : ");
+		float sal = sc.nextFloat();
+		System.out.println("Employee salary: "+sal);
+
+	    System.out.println("Enter status : ");
+		boolean status = true;
+		System.out.println("Employee status : "+status);
+		
+		}
+			
+		}
