@@ -1,0 +1,32 @@
+package multipleInheritanceInterface;
+// We can achieve multiple inheritance with interface;
+interface Parent1
+{
+	void display();	
+}
+interface Parent2
+{
+	void balaji();	
+}
+class Child implements Parent1,Parent2
+{
+    public void display()
+    {
+    	System.out.println("In display from child");
+    }
+    public void balaji()
+    {
+    	System.out.println("In show");
+    }
+}
+public class InheritanceUsingInterface {
+
+     public static void main(String[] args) {
+	
+    	 Child c = new Child();
+    	 c.display();
+    	 c.balaji();
+  }	
+}
+//Out put >>> In display from child >>  In show
+
