@@ -1,0 +1,42 @@
+package encapsulation;
+
+import java.util.LinkedHashSet;
+import java.util.LinkedList;
+import java.util.Set;
+
+public class ClientSet {
+
+public static void main(String[] args) {
+		
+		//1st employee info;
+		CompanyPojo c = new CompanyPojo(100,"Ajith",35);
+		
+		//2nd emp info;
+		CompanyPojo c1 = new CompanyPojo();
+		c1.setId(200);
+		c1.setName("Vijay");
+		c1.setAge(45);
+		
+		
+		
+		//user defined list;
+		Set<CompanyPojo> li = new LinkedHashSet();
+		li.add(c);
+		li.add(c1);
+		
+		
+		System.out.println(li);
+		//note (set)should not do for loop...only for each method
+		//for each loop > type for each;
+		for (CompanyPojo x : li) {
+			System.out.println(x.getId());
+			System.out.println(x.getName());
+			System.out.println(x.getAge());
+			
+		}
+		
+		
+		
+		
+	}
+}
