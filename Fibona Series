@@ -1,0 +1,27 @@
+//for e.x: Number N=5,
+	//First there will be, 0,1
+	//Next the 3rd position value will be addition of 1st and 2nd position values,then it will be, 0,1,1
+	//then the 4th position will be addiction of 2nd and 3rd, 0,1,1,2
+	//then the final position 5th will be addition of 3rd and 4th, 0,1,1,2,3
+
+package test;
+
+public class FibonaSeries {
+
+	public static void main(String[] args) {
+		
+		int n = 10, firstNum = 0, secondNum = 1;
+		
+		int nextNum;
+		
+		for (int i=1; i<=n; i++) {
+			
+			System.out.println(firstNum + ", ");
+			nextNum = firstNum + secondNum;
+			firstNum = secondNum;
+			secondNum = nextNum;
+			
+		}
+		
+	}
+}
