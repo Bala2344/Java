@@ -1,0 +1,43 @@
+package org;
+
+
+class Single{
+	//private constructor >> change public to private
+	private Single() {
+		// TODO Auto-generated constructor stub
+	}
+	//create static object >> Enter static Single
+	static Single s = new Single();
+	
+	//create a static method and return the object
+	public static Single getBalaObject() {
+		return s;
+		
+	}
+}
+public class SingletonClass {
+	
+	public static void main(String[] args) {
+		
+		Single s = Single.getBalaObject();
+		System.out.println(System.identityHashCode(s));
+		
+		Single s1 = Single.getBalaObject();
+		System.out.println(System.identityHashCode(s1));
+		
+		Single s2 = Single.getBalaObject();
+		System.out.println(System.identityHashCode(s2));
+		
+		//Single s3 = new Single();above created constructor they won't allow object creation
+		//single is not visible error msg displayed.
+		Single s3 = Single.getBalaObject();
+		System.out.println(System.identityHashCode(s3));
+		
+	}
+}
+    //its saves memory because its allows us to create only one object
+	//that means it restricting the unnessary creation of an objects.
+	//we create an object the memory is allocated in JVM.
+    // Final out put same memory adress 
+	
+	//className ref = new constructor();
