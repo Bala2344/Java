@@ -1,0 +1,21 @@
+package test;
+
+public class CountOfDigit {
+
+	public static void main(String[] args) {
+		
+		int number = 9677245;
+		
+		int noOfDigits = 0;
+		
+		while (number !=0) {
+			number = number/10;
+			noOfDigits++;
+		}
+		System.out.println("Number of Digits in the given number are: "+noOfDigits);
+		
+	}
+	
+}
+
+// Out put >>> Number of Digits in the given number are: 7
