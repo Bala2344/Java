@@ -1,0 +1,48 @@
+package test;
+
+public class FactorialNumber {
+
+	public static void main(String[] args) {
+		
+		int a = 6;
+		
+		int fact = 1;
+		
+		while (a>0) {
+			
+			fact=fact*a;
+			
+			a--;
+			
+			
+		}
+		System.out.println(fact);
+	}
+}
+
+package test;
+
+public class FactorialRecursion {
+
+	private static int factUsingLoop(int a) {
+		
+		int fact = 1;
+		
+		while (a>0) {
+			
+			fact=fact*a;
+			
+			a--;
+			
+		}
+		return fact;
+		
+
+	}
+	public static void main(String[] args) {
+		
+		System.out.println(factUsingLoop(6));
+	}
+	
+}
+
