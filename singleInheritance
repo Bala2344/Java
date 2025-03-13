@@ -1,0 +1,37 @@
+package singleInheritance;
+
+public class Company extends Employee {
+	//child
+	private void comId() {
+    System.out.println("comId : 987");
+	}
+	private void compName() {
+	System.out.println("CompName : bcd");
+
+    }
+    public static void main(String[] args) {
+		
+    	Company c = new Company();
+    	
+    	c.comId();
+    	c.compName();
+    	
+    	c.empId();
+    	c.empName();
+    			
+	}
+}
+
+
+package singleInheritance;
+
+public class Employee {
+
+	public void empId() {
+    System.out.println("empId : 123");
+	}
+    public void empName() {
+    System.out.println("empName : abc");
+
+		}
+}
