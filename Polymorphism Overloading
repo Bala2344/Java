@@ -1,0 +1,68 @@
+package Polymorphism;
+
+public class EmployeeOverloading {
+
+	//arguments depends on data type:
+	private void empDetails(int id) {
+	System.out.println("Employee Id : "+id);
+	}
+	private void empdetails(String name) {
+	System.out.println("Employee name : "+name);
+	}
+	//arguments depends on data type count:
+	private void empdetails(String name, long phNo) {
+	System.out.println("Employee name : "+name+"\nEmployee phone : "+phNo);	
+	}
+	private void empdetails(Float sal,char gender,boolean status) {
+	System.out.println("Employee salary : "+sal +"\nGender : "+gender +"\nstatus : "+status);
+	}
+	//arguments depends on data type count:
+	private void empdetails(long debtNo,String email) {
+	System.out.println("Employee debtNo : "+debtNo +"\nEmployee email: "+email);	
+
+	}
+	public static void main(String[] args) {
+	EmployeeOverloading e = new EmployeeOverloading();
+	e.empDetails(332892);
+	e.empdetails("Bala");
+	e.empdetails(00041040046042, "cognizant@gmail.com");
+	e.empdetails("sparks", 405199900);
+	e.empdetails(9598.78f, 'M', true);
+			
+			
+				
+	}
+}
+
+
+package Polymorphism;
+
+public class OverLoading {
+
+	private void empDetails(int id) {
+		System.out.println("Employee id : "+id);
+		
+	
+	}
+	 private void empDetails(String name) {
+		 System.out.println("Employee Name : "+name);
+
+	}
+	 private void empDetails(String name, long phNo) {
+		 System.out.println("Employee Name : "+name+"\nEmployee Phone : "+phNo);
+		
+
+	}
+	 public static void main(String[] args) {
+		
+		 OverLoading o = new OverLoading();
+		 
+		 o.empDetails(332892);
+		 o.empDetails("Balaji");
+		 o.empDetails("Arun", 986637278);
+		 
+	}
+}
+
+
+
