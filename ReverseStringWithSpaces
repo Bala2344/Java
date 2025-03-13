@@ -1,0 +1,60 @@
+package test;
+
+public class ReverseStringWithSpaces {
+	
+	    public static void main(String[] args) {
+	        String input = "Hello World";
+	        String reversed = reverseStringPreservingWhitespace(input);
+	        System.out.println("Original: " + input);
+	        System.out.println("Reversed: " + reversed);
+	    }
+
+	    public static String reverseStringPreservingWhitespace(String str) {
+	        char[] arr = str.toCharArray();
+	        int left = 0;
+	        int right = arr.length - 1;
+
+	        while (left < right) {
+	            // Move left pointer to the next non-space character
+	            if (arr[left] == ' ') {
+	                left++;
+	            }
+	            // Move right pointer to the previous non-space character
+	            else if (arr[right] == ' ') {
+	                right--;
+	            }
+	            // Swap characters
+	            else {
+	                char temp = arr[left];
+	                arr[left] = arr[right];
+	                arr[right] = temp;
+	                left++;
+	                right--;
+	            }
+	        }
+
+	        return new String(arr);
+	    }
+	}
+
+	
+	
+		
+		
+		
+		
+	
+	
+		
+	
+	
+	
+	
+
+
+
+
+	
+	
+	
+
