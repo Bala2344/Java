@@ -1,0 +1,39 @@
+package encapsulation;
+
+import java.util.LinkedHashMap;
+import java.util.LinkedHashSet;
+import java.util.Map;
+import java.util.Map.Entry;
+import java.util.Set;
+
+public class map {
+
+public static void main(String[] args) {
+		
+		//1st employee info;
+		CompanyPojo c = new CompanyPojo(100,"Ajith",35);
+		
+		//2nd emp info;
+		CompanyPojo c1 = new CompanyPojo();
+		c1.setId(200);
+		c1.setName("Vijay");
+		c1.setAge(45);
+		
+		//user defined Map;
+		Map<String,CompanyPojo> li = new LinkedHashMap();
+		li.put("1st emp",c);
+		li.put("2nd emp",c1);
+		
+		Set<Entry<String,CompanyPojo>> s = li.entrySet();
+		
+		//For each loop;
+		for (Entry<String, CompanyPojo> x : s) {
+			System.out.println(x.getKey());
+			System.out.println(x.getValue().getId());
+			System.out.println(x.getValue().getName());
+			System.out.println(x.getValue().getAge());
+			
+		}
+		
+	}
+}
